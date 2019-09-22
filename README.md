@@ -1,14 +1,14 @@
 # Ecommerce-Project
 
-## Home page with slider images 
-## Product page that allows the user to filter by product type and price
-## Contact page with form 
-## Footer with social media links (can link to students’ pages)
-## Backend API server and database server
-## Admin site for managing products and viewing contact requests
-## Responsivepages for various device types
-## Accessibility and security.
-### A summary of work accomplished in the first two phases follows:
+### Home page with slider images 
+### Product page that allows the user to filter by product type and price
+### Contact page with form 
+### Footer with social media links (can link to students’ pages)
+### Backend API server and database server
+### Admin site for managing products and viewing contact requests
+### Responsivepages for various device types
+### Accessibility and security.
+A summary of work accomplished in the first two phases follows:
 
 Phase I:Students builtstatic site with HTML, CSS, Bootstrap & jQuery. Thesite wasmocked up in code 
 
