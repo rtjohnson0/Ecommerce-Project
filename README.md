@@ -1,5 +1,5 @@
 # Ecommerce-Project
-
+https://rtjohnson0.github.io/Ecommerce-Project/
 - Home page with slider images 
 - Product page that allows the user to filter by product type and price
 - Contact page with form 
