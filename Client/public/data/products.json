@@ -1,0 +1,72 @@
+{
+    "products":[
+        { "name":"Xbox 1",
+            "price":"179.99",
+            "description":"The Xbox One is an eighth-generation home video game console that was developed by Microsoft.",
+            "url":"https://pmcvariety.files.wordpress.com/2018/06/xbox-one-x_console-controller_fronttilt-top.jpg?w=1000&h=563&crop=1"
+
+
+
+    },{ "name":"Playstation 4",
+        "price":"189.99",
+        "description":"The PlayStation 4 (PS4) is a home video game console developed by Sony Interactive Entertainment.",
+        "url":"https://i.ytimg.com/vi/YQUpg795iBo/maxresdefault.jpg"
+
+    }, { "name":"Madden 20",
+        "price":"59.99",
+        "description":"Madden NFL 20 is an American football video game based on the NFL! Release:08/20/2019 (Xbox,PS4,PC)",
+        "url":"https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTc7KsskjZb6RnXiqCaYR0.A3AZqFHx7pk8Iy4kgy0XclTix5ByYEv3Gv3mQ8VUoKLzbkSiBBWcFu42JkX4qkLzv8lAD.n6DB1KQqpxDX9e42F2Cj53EEn24g9SSAZFCtJLuAKLR.cLcrV3LriQbljH_ZY2f0e7ga3UFrDOCDg63V4-&w=540&format=jpg"
+
+    },{
+        "name":"NBA 2K20",
+        "price":"59.99",
+        "description":"NBA2K20 is a basketball video game developed by 2K Sports Release:09/05/2019|(Xbox,PS4,PC)",
+        "url":"https://hb.imgix.net/52455316a106ec59b3834d0ae7021fef77c1fb63.jpg?auto=compress,format&fit=crop&h=353&w=616&s=524457696ac321b7c5de2381dc729c77"
+    },
+    {
+        "name":"Life is Strange 2",
+        "price":"59.99",
+        "description":"Life Is Strange 2 is an episodic graphic adventure video game developed by Dontnod Entertainment.(Xbox,PS4,PC)",
+        "url":"https://hb.imgix.net/2c124883a584ac9098af11192c1f3b53197ee9d7.jpg?auto=compress,format&fit=crop&h=353&w=616&s=eb42c2bb960e40e52b7d7f82c3ce9d6e"
+    }, {
+        "name":"Star Wars Jedi: Fallen Order",
+        "price":"59.99",
+        "description":"Star Wars Jedi: Fallen Order is a single-player action video game developed by EA Release:11/19/2019 (Xbox,PS4,PC",
+        "url":"https://media.playstation.com/is/image/SCEA/star-wars-jedi-fallen-order-square-art-01-ps4-us-29may19?$native_nt$"
+    },{
+        "name":"Call Of Duty: Modern Warfare",
+        "price":"59.99",
+        "description":"Call of Duty: Modern Warfare is a first-person shooter developed by Infinity Ward Release:10/25/19 (Xbox,PS4,PC)",
+        "url":"https://9to5toys.com/wp-content/uploads/sites/5/2019/05/Call-of-Duty-Modern-Warfare-2019-1.jpg?quality=82&strip=all&w=1600"
+    },{
+        "name":"NHL 20",
+        "price":"59.99",
+        "description":"NHL 20 is a ice hockey video game developed by EA Sports Release:09/13/2019 (Xbox,PS4,PC)",
+        "url":"https://www.trueachievements.com/customimages/095973.jpg"
+    },{
+        "name":"Fifa 20",
+        "price":"59.99",
+        "description":"Upcoming sports game Fifa 20! Will be releasing at the beginning of fall! Release:09/27/2019 (Xbox, PS4, PC)",
+        "url":"http://images.nintendolife.com/5c238196f2058/cr7.original.jpg"
+    },{
+        "name":"Borderlands 3",
+        "price":"59.99",
+        "description":"First-person shooter developed by Gearbox Software,| Release:09/13/2019|(Xbox,PS4,PC)",
+        "url":"https://images5.alphacoders.com/100/thumb-1920-1004495.jpg"
+    },{
+        "name":"Ghost Recon: BreakPoint",
+        "price":"59.99",
+        "description":"Upcoming online tactical shooter video game developed by Ubisoft. |Release:10/05/19|(Xbox,PS4,PC)",
+        "url":"https://i.redd.it/q0835el2oox21.jpg"
+    },{
+        "name":"Nintendo Switch",
+        "price":"279.99",
+        "description":"The Nintendo Switch is a console. Its a hybrid console that can be used as a stationary & portable device.",
+        "url":"https://www.bigw.com.au/medias/sys_master/images/images/h39/h87/12705424015390.png"
+    }
+
+    ]   
+
+
+    }
+    
