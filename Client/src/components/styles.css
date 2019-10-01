@@ -148,3 +148,27 @@ nav li {
 .text-muted {
     color: white;
 }
+
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+.btn-product {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 2em 2em;
+    border: 3px solid black;
+    box-shadow: 0 0 20px
+  }
+.btn-product_cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  
+

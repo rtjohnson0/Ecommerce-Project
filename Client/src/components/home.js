@@ -7,21 +7,7 @@ const Home = () => {
 
         <>
 
-            <div class="collapse navbar-collapse" id="navbarsExample09">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
+           
 
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
 
@@ -137,20 +123,20 @@ const Home = () => {
                     <p class="lead ">Then follow these steps below on how we can help you out! You'll even get money for it!</p>
                 </div>
 
-                <div class="bg-secondary shadow-sm mx-auto " style={{width: '80%', height: '300px', borderRadius: '21px 21px 0 0'}}>
+                <div class="bg-secondary shadow-sm mx-auto " style={{ width: '80%', height: '300px', borderRadius: '21px 21px 0 0' }}>
                     <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/GameSpot-Trade-in-Deal-1.jpg" alt="Trade in" height="300" width="80%" />
                 </div>
             </div>
-         
-
-               </>
 
 
+        </>
 
 
 
-    ) 
-        
+
+
+    )
+
 }
 
 export default Home

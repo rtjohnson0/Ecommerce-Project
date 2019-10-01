@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -47,5 +48,57 @@
           $('#slideshow > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#slideshow');
       }, 5000);
   </script>
+  <script>
+  $("#commentForm").validate({
+    rules: {
+        name: "required",
+        password: {
+            required: true,
+            minlength: 5
+        },
+        confirm_password: {
+            required: true,
+            minlength: 5,
+            equalTo: "#password"
+        },
+        email: {
+            required: true,
+            email: true
+        },
+        agree: "required"
+    },
+    messages: {
+        name: "Please enter your name!",
+        password: {
+            required: "Please provide a password",
+            minlength: "Your password must be at least 5 characters long"
+        },
+        confirm_password: {
+            required: "Please provide a password",
+            minlength: "Your password must be at least 5 characters long",
+            equalTo: "Please enter the same password as above"
+        },
+        email: "Please enter a valid email address",
+        agree: "Please accept our policy"
+    },
+    errorElement: "em",
+    errorPlacement: function(error, element) {
+        // Add the `help-block` class to the error element
+        error.addClass("help-block");
+
+        if (element.prop("type") === "checkbox") {
+            error.insertAfter(element.parent("label"));
+        } else {
+            error.insertAfter(element);
+        }
+    },
+    highlight: function(element, errorClass, validClass) {
+        $(element).parents("p").addClass("has-error").removeClass("has-success");
+    },
+    unhighlight: function(element, errorClass, validClass) {
+        $(element).parents("p").addClass("has-success").removeClass("has-error");
+    }
+});
+</script>
     
 </html>
