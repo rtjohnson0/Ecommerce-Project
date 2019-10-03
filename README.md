@@ -18,7 +18,7 @@ https://rtjohnson0.github.io/Ecommerce-Project/
 
 ### The ecommerce database will be comprised of 3 tables, storing information product, pricing, and contacts.With the MYSQL database designed, deployed and tested, students will construct and api server using nodejs, refactor their product page from Stage II, and integrate their webpages, api server and database to meet a set of requirements.
 
-1.create a base directory
-2.clone this repository git
-3.install dependencies npm install
-4.start dev server: npm start dev
+- create a base directory
+- clone this repository git
+- install dependencies npm install
+- start dev server: npm start dev
