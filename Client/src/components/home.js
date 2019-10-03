@@ -7,7 +7,7 @@ const Home = () => {
 
         <>
 
-           
+
 
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
 
@@ -65,7 +65,7 @@ const Home = () => {
                                 <p class="lead font-weight-normal col-md-12">With over 6,100 stores located throughout the United States and 17 countries, we are the retail destination for gamers around the world. Our GameStop, EB Games and Electronics Boutique retail locations set us apart in the industry.
                                     Everything that we offer our customers-from our expansive selection of new products, to our knowledgeable associates and our value-added pre-owned products-is geared to deliver customer satisfaction. </p>
                             </div>
-                            <a class="btn btn-outline-success" href="#">Coming soon</a>
+                            <a class="btn btn-outline-success" href="/">Coming soon</a>
                         </div>
                     </div>
                     <div class="product-device shadow-sm d-none d-md-block"></div>

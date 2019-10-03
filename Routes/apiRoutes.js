@@ -32,6 +32,9 @@ router.get('/products/:query', (req, res) => {
   let item = req.params.query
   console.log(item)
   connection.query('SELECT Price.product_id,Products.product_name,Products.stock_quantity,Price.price,Products.URL,Products.des_box,Products.categories FROM Price INNER JOIN Products ON Price.product_id = Products.product_id WHERE Products.categories = ? GROUP BY product_id;', [item], function (err, data) {
+    if (err) {
+      throw err
+    }
     res.send(data)
     console.log(`data`, data)
   })
@@ -69,5 +72,27 @@ router.get('/productFilter/Low', (req, res) => {
     res.json(data)
     console.log(data)
   })
+})
+
+router.post('/newcontact', (req, res) => {
+  let firstName = req.body.firstName
+  let lastName = req.body.lastName
+  let email = req.body.email
+  let address = req.body.address
+  let state = req.body.state
+  let zip = req.body.zip
+  connection.query('INSERT INTO Contacts (firstName,lastName,email,address,state,zip) VALUES(?, ?, ?, ?,?,?)', [firstName, lastName, email, address, state, zip], (err, data) => {
+
+    if (err) {
+      throw err
+    }
+
+    console.log(req.body)
+    console.log(data)
+    res.send(data)
+
+  })
+
+
 })
 module.exports = router

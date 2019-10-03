@@ -6,13 +6,14 @@ import ReactDom from 'react-dom'
 
 
 export default class Product extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
             error: null,
             isLoaded: false,
-            products: [],
-            productfilter: []
+            products: []
+
 
         };
         //Fetches an api that returns data that only has the category of "Systems"
@@ -34,7 +35,7 @@ export default class Product extends React.Component {
                         })
                     });
 
-                    //fetches the data with prices high to low and places them in DESC order
+            //fetches the data with prices high to low and places them in DESC order
             this.highToLow = (e) => {
                 fetch('/api/productFilter/High')
                     .then((res) => res.json())
@@ -178,7 +179,7 @@ export default class Product extends React.Component {
 
 
                 <main role="main">
-                    
+
                     <section class="jumbotron text-center">
                         <div class="container">
                             <h1 class="jumbotron-heading">The "EB" Collections</h1>
@@ -188,14 +189,14 @@ export default class Product extends React.Component {
 
                         </div>
                     </section>
-                    <p>Type something in to see if we have any of the platforms or prices you are looking for:</p>
-                    <div className ="btn-product_cont">
-                    <button className ="btn-product" onClick={this.allProducts}>All</button>
-                    <button className ="btn-product" onClick={this.gameSystems}>Systems</button>
-                    <button className ="btn-product" onClick={this.sportsProducts}>Sports Games</button>
-                    <button className ="btn-product" onClick={this.shootingProducts}>Shooters</button>
-                    <button className ="btn-product" onClick={this.highToLow}>High-to-Low</button>
-                    <button className ="btn-product" onClick={this.lowToHigh}>Low-To-High</button>
+                    <p>Click a product or price to see if we have any of the platforms or prices you are looking for:</p>
+                    <div className="btn-product_cont">
+                        <button className="btn-product" onClick={this.allProducts}>All</button>
+                        <button className="btn-product" onClick={this.gameSystems}>Systems</button>
+                        <button className="btn-product" onClick={this.sportsProducts}>Sports Games</button>
+                        <button className="btn-product" onClick={this.shootingProducts}>Shooters</button>
+                        <button className="btn-product" onClick={this.highToLow}>High-to-Low</button>
+                        <button className="btn-product" onClick={this.lowToHigh}>Low-To-High</button>
                     </div>
 
                     <div>

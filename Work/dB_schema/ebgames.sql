@@ -39,14 +39,14 @@ firstName VARCHAR(100) NOT NULL,
 lastName VARCHAR(100) NOT NULL,
 email VARCHAR(255) NOT NULL,
 address VARCHAR(255) NOT NULL,
-state CHAR(2) NOT NULL,
-zip INT NOT NULL,
+state CHAR(2) ,
+zip INT,
 PRIMARY KEY (contact_id)
 );
 INSERT INTO Products 
 (product_name,stock_quantity,url,des_box,categories)
-VALUES('Xbox 1', 125,'https://pmcvariety.files.wordpress.com/2018/06/xbox-one-x_console-controller_fronttilt-top.jpg?w=1000&h=563&crop=1','The Xbox One is an eighth-generation home video game console that was developed by Microsoft.','System'),
-('Playstation 4', 100,"https://i.ytimg.com/vi/YQUpg795iBo/maxresdefault.jpg",'"The PlayStation 4 (PS4) is a home video game console developed by Sony Interactive Entertainment.','System'),
+VALUES('Xbox 1', 125,'https://pmcvariety.files.wordpress.com/2018/06/xbox-one-x_console-controller_fronttilt-top.jpg?w=1000&h=563&crop=1','The Xbox One is an eighth-generation home video game console that was developed by Microsoft.','Systems'),
+('Playstation 4', 100,"https://i.ytimg.com/vi/YQUpg795iBo/maxresdefault.jpg",'"The PlayStation 4 (PS4) is a home video game console developed by Sony Interactive Entertainment.','Systems'),
 ('Madden 20', 300,'https://images.performgroup.com/di/library/sporting_news/44/d3/madden-nfl-20-patrick-mahomes_1rtvl1rtb15rv1m0btr8iisu2u.jpg?t=1450601490&quality=100','Madden NFL 20 is an American football video game based on the NFL! Release:08/20/2019 (Xbox,PS4,PC)','Sports'),
 ('NBA 2K20', 1000,'https://hb.imgix.net/52455316a106ec59b3834d0ae7021fef77c1fb63.jpg?auto=compress,format&fit=crop&h=353&w=616&s=524457696ac321b7c5de2381dc729c77','NBA2K20 is a basketball video game developed by 2K Sports Release:09/05/2019|(Xbox,PS4,PC)','Sports'),
 ('Life is Strange 2', 40,'https://hb.imgix.net/2c124883a584ac9098af11192c1f3b53197ee9d7.jpg?auto=compress,format&fit=crop&h=353&w=616&s=eb42c2bb960e40e52b7d7f82c3ce9d6e','Life Is Strange 2 is an episodic graphic adventure video game developed by Dontnod Entertainment.(Xbox,PS4,PC)','Shooters'),
@@ -56,7 +56,7 @@ VALUES('Xbox 1', 125,'https://pmcvariety.files.wordpress.com/2018/06/xbox-one-x_
 ('Fifa 20', 10000,'http://images.nintendolife.com/5c238196f2058/cr7.original.jpg','Upcoming sports game Fifa 20! Will be releasing at the beginning of fall! Release:09/27/2019 (Xbox, PS4, PC)','Sports'),
 ('Borderlands 3', 550,'https://images5.alphacoders.com/100/thumb-1920-1004495.jpg','First-person shooter developed by Gearbox Software,| Release:09/13/2019|(Xbox,PS4,PC)','Shooters'),
 ('Ghost Recon: BreakPoint', 999,'https://i.redd.it/q0835el2oox21.jpg','Upcoming online tactical shooter video game developed by Ubisoft. |Release:10/05/19|(Xbox,PS4,PC)','Shooters'),
-('Nintendo Switch', 30,'https://www.bigw.com.au/medias/sys_master/images/images/h39/h87/12705424015390.png','The Nintendo Switch is a console. Its a hybrid console that can be used as a stationary & portable device.','System');
+('Nintendo Switch', 30,'https://www.bigw.com.au/medias/sys_master/images/images/h39/h87/12705424015390.png','The Nintendo Switch is a console. Its a hybrid console that can be used as a stationary & portable device.','Systems');
 INSERT INTO Price 
 (price,currency)
 VALUES(179.99, 'USD'),
@@ -85,9 +85,12 @@ VALUES('Reggie', 'Johnson','reggie1997@hotmail.com','5555 Oregon Lane','NC',2069
 ('Klay', 'Thompson','KThompson0@warriors.com','3333 Three Lane','CA',18504),
 ('Gordon', 'Ramsey','GRamsey23@aol.com','5020 Oregon Lane','NC',20695);
 
- SELECT Price.product_id,Products.product_name,Products.stock_quantity,Price.price,Products.des_box,Products.categories FROM Price INNER JOIN Products ON Price.product_id = Products.product_id
-GROUP BY product_id;
+ -- SELECT Price.product_id,Products.product_name,Products.stock_quantity,Price.price,Products.des_box,Products.categories FROM Price INNER JOIN Products ON Price.product_id = Products.product_id
+-- GROUP BY product_id;
+  SELECT Price.product_id,Products.product_name,Products.stock_quantity,Price.price,Products.URL,Products.des_box,Products.categories FROM Price INNER JOIN Products ON Price.product_id = Products.product_id 
+  WHERE Products.categories = "Systems" GROUP BY product_id;
 
--- SELECT * FROM Contacts;
+
+SELECT * FROM Contacts;
 
 -- SELECT URL FROM Products

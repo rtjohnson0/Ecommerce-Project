@@ -23,9 +23,9 @@ class Footer extends React.Component {
                     <div className="col-6 col-md ">
                         <h5>Website</h5>
                         <ul className="list-unstyled text-small ">
-                            <li><a className="text-muted " href="# ">Bootstrap</a></li>
+                            <li><a className="text-muted " href=" ">Bootstrap</a></li>
                             <li><a className="text-muted " href="# ">Jquery</a></li>
-                            <li><a className="text-muted " href="# ">CSS</a></li>
+                            <li><a className="text-muted " href="http://localhost:8080/api/contacts">Contacts</a></li>
                             <li><a className="text-muted " href="# ">JavaScript</a></li>
                         </ul>
                     </div>

@@ -16,14 +16,14 @@ export default class Nav extends React.Component {
 
                 <div className="collapse navbar-collapse" id="navbarsExample09">
                     <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
+                        <li className="nav-item">
                             <NavLink exact={true} className="nav-link" to="/home">Home</NavLink>
                         </li>
-                        <li className="nav-item active">
-                            <NavLink className="nav-link" to="/">Products<span class="sr-only">(current)</span></NavLink>
+                        <li className="nav-item">
+                            <NavLink exact={true} className="nav-link" to="/">Products</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="./contact">Contact</NavLink>
+                            <NavLink exact={true} className="nav-link" to="./contact">Contact</NavLink>
                         </li>
 
                     </ul>
